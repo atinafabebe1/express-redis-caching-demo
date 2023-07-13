@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const itemRoutes = require('./routes/item');
 const app = express();
 
-// Connect to MongoDB 
-mongoose.connect('mongodb://localhost/mydb', {
+// Connect to MongoDB
+mongoose.connect('mongodb://localhost/h', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });

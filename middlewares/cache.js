@@ -26,8 +26,10 @@ async function setCache(key, data, expiration) {
 }
 
 async function invalidateCache(key) {
+    console.log("invalidating the cache")
     try {
         await client.del(key);
+
     } catch (err) {
         console.error('Error deleting data from Redis cache', err);
     }
